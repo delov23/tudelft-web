@@ -1,0 +1,10 @@
+.form-container{
+    display: flex;
+}
+.left-side-form{
+    display: flex;
+    flex-direction: column;
+}
+.right-side-form{
+    display: flex;
+}
