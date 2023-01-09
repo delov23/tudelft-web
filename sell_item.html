@@ -19,5 +19,48 @@
         <a class="primary-btn" href="/signup">Sign up</a>
       </div>
     </nav>
+    <main>
+      <form action="#">
+        <div class="form-field">
+          <label for="itemCat">Product Category:</label>
+          <select name="category" id="itemCat">
+            <option default selected disabled>Choose a category...</option>
+            <option value="laptops">Laptops</option>
+            <option value="phones">Phones</option>
+            <option value="accessories">Accessories</option>
+            <option value="tablets">Tablets</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="item-name-field">Product name:</label>
+          <input
+            id="item-name-field"
+            name="name"
+            placeholder="Type the item name"
+            type="text"
+          />
+        </div>
+        <div class="form-field">
+          <label for="item-description-field">Product description:</label>
+          <textarea
+            id="item-description-field"
+            name="name"
+            placeholder="Type the description"
+            rows="3"
+            cols="20"
+          ></textarea>
+        </div>
+        <div class="form-field">
+          <label for="item-price-field">Price per unit:</label>
+          <input id="item-price-field" name="name" type="number"></input>
+        </div>
+        <div class="form-field">
+          <label for="item-price-field">Product Images:</label>
+          <input id="item-price-field" name="name" type="file" placeholder="Add Image"></input>
+        </div>
+        <button type="submit">Submit Product</button>
+      </form>
+    </main>
   </body>
 </html>
