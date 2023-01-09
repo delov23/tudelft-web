@@ -51,7 +51,6 @@
 }
 
 .primary-btn:hover {
-    margin-left: -0.55rem;
     padding: 0.55rem 1.15rem;
     font-size: 1.2rem;
 }
@@ -155,4 +154,12 @@
     -moz-border-radius: .5rem;
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
+}
+
+form h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 900;
 }
