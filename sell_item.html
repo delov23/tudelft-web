@@ -21,6 +21,7 @@
     </nav>
     <main>
       <form class="formatted-form" action="#">
+        <h2>Sell a Product!</h2>
         <div class="form-container">
           <div class="left-side-form">
             <div class="form-field">
@@ -55,7 +56,7 @@
             </div>
             <div class="form-field">
               <label for="item-price-field">Price per unit:</label>
-              <input id="item-price-field" name="name" type="number"></input>
+              <input id="item-price-field" name="name" type="number" min="0"></input>
             </div>
         </div>
 
@@ -67,8 +68,8 @@
         </div>
       </div>
 
-      <div class="submit-item">
-        <button type="submit">Submit Product</button>
+      <div class="centered-content padding-top-submit">
+        <button type="submit" class="accent-btn">Submit Product</button>
       </div>
       </form>
     </main>
