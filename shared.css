@@ -87,3 +87,18 @@
     display: flex;
     flex-direction: column;
 }
+
+.formatted-form {
+    width: 80vw;
+    min-height: 70vh;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 4rem;
+    background-color: #eaeaea;
+    box-shadow: 0 0 32px #bababa;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
