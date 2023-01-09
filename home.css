@@ -1,0 +1,102 @@
+.homepage {
+    display: flex;
+    align-items: stretch;
+    min-height: calc(100vh - 4.5rem);
+}
+
+.filters {
+    background-color: var(--light);
+    padding: 1rem;
+    flex: 1;
+}
+
+.filters h3 {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.search-field {
+    padding: 1rem;
+}
+
+.search-field input[name='query'] {
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.items-container {
+    flex: 3;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.items {
+    display: flex;
+}
+
+.item {
+    width: 20rem;
+    height: 26rem;
+    background-color: #efefef;
+    margin: 1rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.item-image {
+    height: 50%;
+    position: relative;
+}
+
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.item-image .add-to-basket {
+    bottom: -25px;
+    right: 20px;
+    position: absolute;
+}
+
+.add-to-basket {
+    cursor: pointer;
+    font-size: 25px;
+    border: none;
+    box-shadow: 0 0 16px var(--secondary);
+    background: linear-gradient(45deg, var(--light), var(--secondary));
+    background: -webkit-linear-gradient(45deg, var(--light), var(--secondary));
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.item-info {
+    padding: 1.5rem;
+}
+
+.item-info p {
+    padding-top: 0.5rem;
+    margin: 0;
+}
+
+.item h4 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
