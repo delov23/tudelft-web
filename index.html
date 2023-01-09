@@ -1,109 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>E-Commerce</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="shared.css" />
-        <link rel="stylesheet" href="home.css" />
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="nav-left">
-                <a class="nav-title" href="#home">Shopify 2.0</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a class="nav-title" href="#home">D&amp;Y's</a>
+      </div>
+      <div class="nav-right">
+        <a class="secondary-btn" href="#signin">Sign in</a>
+        <a class="primary-btn" href="#signup">Sign up</a>
+      </div>
+    </nav>
+    <main class="homepage">
+      <div class="filters">
+        <h3>Filters</h3>
+        <h4>Category</h4>
+        <div class="vertically-centered">
+          <input type="checkbox" id="books" />
+          <label for="books">Books (7)</label>
+        </div>
+        <div class="vertically-centered">
+          <input type="checkbox" id="films" />
+          <label for="films">Films (2)</label>
+        </div>
+        <div class="vertically-centered">
+          <input type="checkbox" id="games" />
+          <label for="games">Games (10)</label>
+        </div>
+        <div>
+          <a class="link" href="#">Show more...</a>
+        </div>
+        <h4>Price</h4>
+        <div>
+          <div class="vertically-centered">
+            From: <input type="number" step="1" />
+          </div>
+          <div class="vertically-centered">
+            To: <input type="number" step="1" />
+          </div>
+        </div>
+        <h4>Supplier</h4>
+        <div class="vertically-centered">
+          <input type="checkbox" id="nintendo" />
+          <label for="nintendo">Nintendo (4)</label>
+        </div>
+        <div class="vertically-centered">
+          <input type="checkbox" id="oxford-university-press" />
+          <label for="oxford-university-press"
+            >Oxford University Press (5)</label
+          >
+        </div>
+        <div>
+          <a class="link" href="#">Show more...</a>
+        </div>
+        <h4>Rating</h4>
+        <div class="vertically-centered">
+          <input type="checkbox" id="5s" />
+          <label for="5s">⭐⭐⭐⭐⭐</label>
+        </div>
+        <div class="vertically-centered">
+          <input type="checkbox" id="4s" />
+          <label for="4s">⭐⭐⭐⭐</label>
+        </div>
+        <div class="vertically-centered">
+          <input type="checkbox" id="3s" />
+          <label for="3s">⭐⭐⭐</label>
+        </div>
+        <div class="vertically-centered">
+          <input type="checkbox" id="2s" />
+          <label for="2s">⭐⭐</label>
+        </div>
+        <div class="vertically-centered">
+          <input type="checkbox" id="1s" />
+          <label for="1s">⭐</label>
+        </div>
+      </div>
+      <div class="items-container">
+        <div class="search-field">
+          <input
+            name="query"
+            placeholder="Type in a few keywords..."
+            type="text"
+          />
+          <button>Search</button>
+          <button>Sort by...</button>
+        </div>
+        <div class="items">
+          <div class="item">
+            <div class="item-image">
+              <img
+                src="https://images.unsplash.com/photo-1606229365485-93a3b8ee0385?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
+                alt=""
+              />
+              <button class="add-to-basket">+</button>
             </div>
-            <div class="nav-right">
-                <a class="secondary-btn" href="#signin">Sign in</a>
-                <a class="primary-btn" href="#signup">Sign up</a>
+            <div class="item-info">
+              <h4>MacBook Air M1</h4>
+              <div>
+                <p><b>Supplier:</b> Apple</p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Illum laborum
+                </p>
+                <p>⭐⭐⭐⭐</p>
+              </div>
             </div>
-        </nav>
-        <main class="homepage">
-            <div class="filters">
-                <h3>Filters</h3>
-                <h4>Category</h4>
-                <div class="vertically-centered">
-                    <input type="checkbox" id="books" />
-                    <label for="books">Books (7)</label>
-                </div>
-                <div class="vertically-centered">
-                    <input type="checkbox" id="films" />
-                    <label for="films">Films (2)</label>
-                </div>
-                <div class="vertically-centered">
-                    <input type="checkbox" id="games" />
-                    <label for="games">Games (10)</label>
-                </div>
-                <div>
-                    <a class="link" href="#">Show more...</a>
-                </div>
-                <h4>Price</h4>
-                <div>
-                    <div class="vertically-centered">
-                        From: <input type="number" step="1" />
-                    </div>
-                    <div class="vertically-centered">
-                        To: <input type="number" step="1" />
-                    </div>
-                </div>
-                <h4>Supplier</h4>
-                <div class="vertically-centered">
-                    <input type="checkbox" id="nintendo" />
-                    <label for="nintendo">Nintendo (4)</label>
-                </div>
-                <div class="vertically-centered">
-                    <input type="checkbox" id="oxford-university-press" />
-                    <label for="oxford-university-press">Oxford University Press (5)</label>
-                </div>
-                <div>
-                    <a class="link" href="#">Show more...</a>
-                </div>
-                <h4>Rating</h4>
-                <div class="vertically-centered">
-                    <input type="checkbox" id="5s" />
-                    <label for="5s">⭐⭐⭐⭐⭐</label>
-                </div>
-                <div class="vertically-centered">
-                    <input type="checkbox" id="4s" />
-                    <label for="4s">⭐⭐⭐⭐</label>
-                </div>
-                <div class="vertically-centered">
-                    <input type="checkbox" id="3s" />
-                    <label for="3s">⭐⭐⭐</label>
-                </div>
-                <div class="vertically-centered">
-                    <input type="checkbox" id="2s" />
-                    <label for="2s">⭐⭐</label>
-                </div>
-                <div class="vertically-centered">
-                    <input type="checkbox" id="1s" />
-                    <label for="1s">⭐</label>
-                </div>
-            </div>
-            <div class="items-container">
-                <div class="search-field">
-                    <input name="query" placeholder="Type in a few keywords..." type="text" />
-                    <button>Search</button>
-                    <button>Sort by...</button>
-                </div>
-                <div class="items">
-                    <div class="item">
-                        <div class="item-image">
-                            <img src="https://images.unsplash.com/photo-1606229365485-93a3b8ee0385?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8" alt="">
-                        <button class="add-to-basket">+</button>
-                        </div>
-                        <div class="item-info">
-                            <h4>MacBook Air M1</h4>
-                            <div>
-                                <p><b>Supplier:</b> Apple</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum laborum</p>
-                                <p>⭐⭐⭐⭐</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </body>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
