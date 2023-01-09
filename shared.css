@@ -57,7 +57,7 @@
 .accent-btn {
     font-size: 1.1rem;
     padding: 0.5rem 1rem;
-    background: var(--secondary);
+    background: var(--accent-2);
     color: var(--dark);
     font-weight: 900;
     border-radius: 1.5rem;
@@ -65,7 +65,7 @@
     -moz-border-radius: 1.5rem;
     -ms-border-radius: 1.5rem;
     -o-border-radius: 1.5rem;
-    box-shadow: 0 0 0.8rem var(--secondary);
+    box-shadow: 0 0 0.8rem var(--accent-2);
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -116,12 +116,14 @@
 .form-field{
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .formatted-form {
     width: 80vw;
-    min-height: 70vh;
+    min-height: 80vh;
     margin: auto;
+    margin-bottom: 1rem;
     margin-top: 2rem;
     padding: 4rem;
     background-color: #eaeaea;

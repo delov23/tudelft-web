@@ -9,6 +9,11 @@
 .right-side-form{
     display: flex;
 }
-.submit-item{
+.padding-top-submit{
+    
+    padding-top: 0.5rem;
+}
+
+.accent-btn{
 
 }
