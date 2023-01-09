@@ -51,8 +51,7 @@
 }
 
 .primary-btn:hover {
-    padding: 0.55rem 1.15rem;
-    font-size: 1.2rem;
+    scale: 1.1;
 }
 
 .accent-btn {
@@ -75,9 +74,7 @@
 }
 
 .accent-btn:hover {
-    margin-left: -0.55rem;
-    padding: 0.55rem 1.15rem;
-    font-size: 1.2rem;
+    scale: 1.1;
 }
 
 .secondary-btn {
