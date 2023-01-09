@@ -46,6 +46,9 @@ p,
 input,
 button,
 a,
+textarea,
+select,
+option,
 label {
     font-family: 'Inter', sans-serif;
 }
