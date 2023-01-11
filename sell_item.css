@@ -10,10 +10,8 @@
     display: flex;
 }
 .padding-top-submit{
-    
     padding-top: 0.5rem;
 }
-
-.accent-btn{
-
+.formatted-form{
+    padding-top: 2rem;
 }
