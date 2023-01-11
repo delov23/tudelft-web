@@ -64,7 +64,8 @@
         <div class="right-side-form">
           <div class="form-field">
             <label for="item-price-field">Product Images:</label>
-            <input style="flex: 1;" id="item-price-field" name="name" type="file" placeholder="Add Image"></input>
+            <input id="item-price-field" name="name" type="file" accept="image/*" multiple placeholder="Add Image" onchange="loadFile(event)"></input>
+            <img id="item-img">
           </div>
         </div>
       </div>
@@ -75,5 +76,6 @@
       </form>
     </main>
     <script src="forms.js"></script>
+    <script src="import_img.js"></script>
   </body>
 </html>

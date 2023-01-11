@@ -15,3 +15,8 @@
 .formatted-form{
     padding-top: 2rem;
 }
+#item-img{
+    object-fit:scale-down;
+    width: 23rem;
+    height: 19.7rem;
+}
