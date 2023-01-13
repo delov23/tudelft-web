@@ -20,3 +20,8 @@
     width: 23rem;
     height: 19.7rem;
 }
+.img-container>p{
+    position: absolute;
+    top: 50%;
+    left: 58%;   
+}
