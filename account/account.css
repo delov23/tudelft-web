@@ -3,6 +3,10 @@
     margin: auto;
 }
 
+.account h1 {
+    text-align: left;
+}
+
 .account-container {
     display: flex;
 }
@@ -20,4 +24,29 @@
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .account {
+        width: 80vw;
+    }
+
+    .account h1 {
+        text-align: center;
+    }
+    
+    .account-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .account-container > div:first-child {
+        padding-right: 0;
+    }
+    
+    .pfp {
+        width: 6rem;
+        height: 6rem;
+    }   
 }
