@@ -40,14 +40,20 @@
           <a class="link" href="#">Show more...</a>
         </div>
         <h4>Price</h4>
-        <div>
-          <div class="price-filter-container vertically-centered">
-            <p>€</p>
-            <input id="min-price" type="number" step="100" min="0" />
+        <div style="display: flex;">
+          <div style="display: flex; flex-direction: column; justify-content: space-evenly; padding-right: 1rem;">
+            <label for="min-price">From: </label> 
+            <label for="max-price">To: </label>
           </div>
-          <div class="price-filter-container vertically-centered">
-            <p>€</p>
-            <input id="max-price" type="number" step="100" min="0" />
+          <div>
+            <div class="price-filter-container vertically-centered">
+              <p>€</p>
+              <input id="min-price" type="number" step="100" min="0" />
+            </div>
+            <div class="price-filter-container vertically-centered">
+              <p>€</p>
+              <input id="max-price" type="number" step="100" min="0" />
+            </div>
           </div>
         </div>
         <h4>Supplier</h4>
