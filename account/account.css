@@ -1,0 +1,23 @@
+.account {
+    width: 60vw;
+    margin: auto;
+}
+
+.account-container {
+    display: flex;
+}
+
+.account-container > div:first-child {
+    padding-right: 2rem;
+}
+
+.pfp {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}

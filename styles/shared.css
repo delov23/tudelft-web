@@ -92,6 +92,28 @@
     font-size: 1.2rem;
 }
 
+.danger-btn {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    background: var(--danger);
+    box-shadow: 0 0 0.8rem var(--danger);
+    color: var(--light);
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.danger-btn:hover {
+    scale: 1.1;
+}
+
 /* UTIL */
 .vertically-centered {
     display: flex;
@@ -110,6 +132,10 @@
 
 .padding-top {
     padding-top: 2rem;
+}
+
+.padding-bottom {
+    padding-bottom: 2rem;
 }
 
 /* FORMS */

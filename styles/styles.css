@@ -37,6 +37,10 @@ a {
     color: var(--dark);
 }
 
+input {
+    border: 1px solid black;
+}
+
 button {
     border: none;
     cursor: pointer;
