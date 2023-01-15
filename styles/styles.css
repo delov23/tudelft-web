@@ -32,6 +32,13 @@ img {
     max-width: 100%;
 }
 
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: black;
+}
+
 a {
     text-decoration: none;
     color: var(--dark);
