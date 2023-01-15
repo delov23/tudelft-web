@@ -53,68 +53,49 @@
                             </select>
                         </div>
 
-                        <div class="form-field">
-                            <label for="item-name-field">Product name:</label>
-                            <input
-                                id="item-name-field"
-                                name="name"
-                                placeholder="Type the item name"
-                                type="text"
-                            />
-                        </div>
-                        <div class="form-field">
-                            <label for="item-description-field"
-                                >Product description:</label
-                            >
-                            <textarea
-                                id="item-description-field"
-                                name="name"
-                                placeholder="Type the description"
-                                rows="3"
-                                cols="30"
-                            ></textarea>
-                        </div>
-                        <div class="form-field">
-                            <label for="item-price-field"
-                                >Price per unit:</label
-                            >
-                            <input
-                                id="item-price-field"
-                                name="name"
-                                type="number"
-                                min="0"
-                            />
-                        </div>
-                    </div>
+            <div class="form-field">
+              <label for="item-name-field">Product name:</label>
+              <input
+                id="item-name-field"
+                name="name"
+                placeholder="Type the item name"
+                type="text"
+              />
+            </div>
+            <div class="form-field">
+              <label for="item-description-field">Product description:</label>
+              <textarea
+                id="item-description-field"
+                name="name"
+                placeholder="Type the description"
+                rows="3"
+                cols="30"
+              ></textarea>
+            </div>
+            <div class="form-field">
+              <label for="item-price-field">Price per unit:</label>
+              <input id="item-price-field" name="name" type="number" min="0"></input>
+            </div>
+        </div>
 
-                    <div class="right-side-form">
-                        <div class="form-field">
-                            <label for="item-images-field"
-                                >Product Images:</label
-                            >
-                            <input
-                                id="item-images-field"
-                                name="name"
-                                type="file"
-                                accept="image/*"
-                                multiple
-                            />
-                            <div class="img-container">
-                                <img id="item-img" />
-                                <p>No Images Added Yet</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="right-side-form">
+          <div class="form-field">
+            <label for="item-images-field">Product Images:</label>
+            <input id="item-images-field" name="name" type="file" accept="image/*" multiple></input>
+            <div class="img-container">
+              <img class="item-img">
+              <p>No Images Added Yet</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                <div class="centered-content padding-top-submit">
-                    <button type="submit" class="accent-btn">
-                        Submit Product for Sell
-                    </button>
-                </div>
-            </form>
-        </main>
-        <script src="../scripts/forms.js"></script>
-        <script src="../scripts/import_img.js"></script>
-    </body>
+      <div class="centered-content padding-top-submit">
+        <button type="submit" class="accent-btn">Submit Product for Sell</button>
+      </div>
+      </form>
+    </main>
+    <script src="../scripts/forms.js"></script>
+    <script src="./import_img.js"></script>
+  </body>
 </html>
