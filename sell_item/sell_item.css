@@ -20,10 +20,14 @@
     width: 23rem;
     height: 19.7rem;
 }
+.img-container{
+    position: relative;
+    z-index: 0;
+}
 .img-container>p{
     position: absolute;
-    top: 50%;
-    left: 58%;   
+    top: 40%;
+    left: 28%;   
 }
 @media screen and (max-width:1200px) {
     .form-container{
