@@ -32,7 +32,7 @@
                                     placeholder="0XXXXXXXXX"
                                 />`;
 
-            document.querySelector('div > input[id="username"]').parentNode.after(el1, el2);
+            document.querySelector('div > input[id="name"]').parentNode.after(el1, el2);
         }
     });
 })();

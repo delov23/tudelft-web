@@ -11,6 +11,10 @@
     display: flex;
 }
 
+.account-container > *:nth-child(2) {
+    flex: 1;
+}
+
 .account-container > div:first-child {
     padding-right: 2rem;
 }
@@ -24,6 +28,10 @@
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
+}
+
+.logout-form {
+    text-align: right;
 }
 
 @media screen and (max-width: 1200px) {
