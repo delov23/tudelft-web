@@ -15,7 +15,7 @@
 .formatted-form{
     padding-top: 2rem;
 }
-#item-img{
+.item-img{
     object-fit:scale-down;
     width: 23rem;
     height: 19.7rem;
@@ -33,7 +33,7 @@
         width: 100% !important;
 
     }
-    #item-img{
+    .item-img{
         height: 12rem;
     }
     .img-container>p{
