@@ -25,3 +25,21 @@
     top: 50%;
     left: 58%;   
 }
+@media screen and (max-width:1200px) {
+    .form-container{
+        flex-direction: column;
+    }
+    .right-side-form>div{
+        width: 100% !important;
+
+    }
+    #item-img{
+        height: 12rem;
+    }
+    .img-container>p{
+        display: none;
+    }
+    .accent-btn{
+        font-size: 0.9rem;
+    }
+}

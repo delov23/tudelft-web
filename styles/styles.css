@@ -59,6 +59,7 @@ a,
 textarea,
 select,
 option,
-label {
+label,
+span {
     font-family: 'Inter', sans-serif;
 }
