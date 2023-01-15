@@ -12,7 +12,7 @@
   <body>
     <nav class="navbar">
       <div class="nav-left">
-        <a class="nav-title" href="./">D&amp;Y's</a>
+        <a class="nav-title" href="./home.html">D&amp;Y's</a>
       </div>
       <div class="nav-right">
         <a class="secondary-btn" href="./cart/">Shopping cart</a>
@@ -22,66 +22,85 @@
     </nav>
     <main class="homepage">
       <div class="filters">
-        <h3>Filters</h3>
-        <h4>Category</h4>
-        <div class="vertically-centered">
-          <input type="checkbox" id="books" />
-          <label for="books">Books (7)</label>
+        <div class="filters-header">
+          <h3>Filters</h3>
+          <button>&uarr;</button>
         </div>
-        <div class="vertically-centered">
-          <input type="checkbox" id="films" />
-          <label for="films">Films (2)</label>
-        </div>
-        <div class="vertically-centered">
-          <input type="checkbox" id="games" />
-          <label for="games">Games (10)</label>
-        </div>
-        <div>
-          <a class="link" href="#">Show more...</a>
-        </div>
-        <h4>Price</h4>
-        <div>
+        <div class="filter closed">
+          <h4>Category</h4>
           <div class="vertically-centered">
-            From: <input type="number" step="1" />
+            <input type="checkbox" id="books" />
+            <label for="books">Books (7)</label>
           </div>
           <div class="vertically-centered">
-            To: <input type="number" step="1" />
+            <input type="checkbox" id="films" />
+            <label for="films">Films (2)</label>
+          </div>
+          <div class="vertically-centered">
+            <input type="checkbox" id="games" />
+            <label for="games">Games (10)</label>
+          </div>
+          <div>
+            <a class="link" href="#">Show more...</a>
           </div>
         </div>
-        <h4>Supplier</h4>
-        <div class="vertically-centered">
-          <input type="checkbox" id="nintendo" />
-          <label for="nintendo">Nintendo (4)</label>
+        <div class="filter closed">
+          <h4>Price</h4>
+          <div style="display: flex;">
+            <div style="display: flex; flex-direction: column; justify-content: space-evenly; padding-right: 1rem;">
+              <label for="min-price">From: </label> 
+              <label for="max-price">To: </label>
+            </div>
+            <div>
+              <div class="price-filter-container vertically-centered">
+                <p>€</p>
+                <input id="min-price" type="number" step="100" min="0" />
+              </div>
+              <div class="price-filter-container vertically-centered">
+                <p>€</p>
+                <input id="max-price" type="number" step="100" min="0" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="vertically-centered">
-          <input type="checkbox" id="oxford-university-press" />
-          <label for="oxford-university-press"
+        <div class="filter closed">
+          <h4>Supplier</h4>
+          <div class="vertically-centered">
+            <input type="checkbox" id="nintendo" />
+            <label for="nintendo">Nintendo (4)</label>
+          </div>
+          <div class="vertically-centered">
+            <input type="checkbox" id="oxford-university-press" />
+            <label for="oxford-university-press"
             >Oxford University Press (5)</label
-          >
+            >
+          </div>
+          <div>
+            <a class="link" href="#">Show more...</a>
+          </div>
         </div>
-        <div>
-          <a class="link" href="#">Show more...</a>
-        </div>
-        <h4>Rating</h4>
-        <div class="vertically-centered">
-          <input type="checkbox" id="5s" />
-          <label for="5s">⭐⭐⭐⭐⭐</label>
-        </div>
-        <div class="vertically-centered">
-          <input type="checkbox" id="4s" />
-          <label for="4s">⭐⭐⭐⭐</label>
-        </div>
-        <div class="vertically-centered">
-          <input type="checkbox" id="3s" />
-          <label for="3s">⭐⭐⭐</label>
-        </div>
-        <div class="vertically-centered">
-          <input type="checkbox" id="2s" />
-          <label for="2s">⭐⭐</label>
-        </div>
+        <div class="filter closed">
+          <h4>Rating</h4>
+          <div class="vertically-centered">
+            <input type="checkbox" id="5s" />
+            <label for="5s">⭐⭐⭐⭐⭐</label>
+          </div>
+          <div class="vertically-centered">
+            <input type="checkbox" id="4s" />
+            <label for="4s">⭐⭐⭐⭐</label>
+          </div>
+          <div class="vertically-centered">
+            <input type="checkbox" id="3s" />
+            <label for="3s">⭐⭐⭐</label>
+          </div>
+          <div class="vertically-centered">
+            <input type="checkbox" id="2s" />
+            <label for="2s">⭐⭐</label>
+          </div>
         <div class="vertically-centered">
           <input type="checkbox" id="1s" />
           <label for="1s">⭐</label>
+        </div>
         </div>
       </div>
       <div class="items-container">
@@ -113,11 +132,13 @@
                   Illum laborum
                 </p>
                 <p>⭐⭐⭐⭐</p>
+                <p><b>€900</b></p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
+    <script src="./scripts/home.js"></script>
   </body>
 </html>

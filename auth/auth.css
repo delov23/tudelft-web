@@ -56,3 +56,21 @@ form {
     margin: auto;
 }
 
+@media screen and (max-width: 1200px) {
+    .account-choice {
+        flex-direction: column;
+        width: 95%;
+    }
+    
+    .account-choice > * {
+        margin-top: .1rem;
+        min-width: fit-content;
+        font-size: .7rem;
+        padding: .5rem;
+        font-weight: 700;
+    }
+    
+    .form-content {
+        width: 100%;
+    }
+}

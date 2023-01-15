@@ -29,6 +29,10 @@
 }
 
 .nav-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
 }
 
 /* BUTTONS */
@@ -89,7 +93,7 @@
 }
 
 .secondary-btn:hover {
-    font-size: 1.2rem;
+    scale: 1.1;
 }
 
 .danger-btn {
