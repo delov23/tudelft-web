@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>D&Y's</title>
-        <link rel="stylesheet" href="../styles/styles.css" />
-        <link rel="stylesheet" href="../styles/shared.css" />
-        <link rel="stylesheet" href="./sell_item.css" />
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="nav-left">
-                <a class="nav-title" href="../home.html">D&amp;Y's</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D&Y's</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/shared.css" />
+    <link rel="stylesheet" href="./sell_item.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a class="nav-title" href="../home.html">D&amp;Y's</a>
+      </div>
+      <div class="nav-right">
+        <a class="secondary-btn" href="../sell_item/">Sell item</a>
+        <a href="../cart/">
+          <div class="basket">
+            <img
+              class="basket-nav"
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/cart-5590712-4652404.png"
+              alt="Shopping cart"
+            />
+            <p class="notification">1</p>
+          </div>
+        </a>
+        <a href="../account/">
+          <img
+            class="account-nav"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/1024px-Circle-icons-profile.svg.png"
+            alt="Profile Picture"
+          />
+        </a>
+      </div>
+    </nav>
+    <main>
+      <form class="formatted-form" action="#">
+        <h2>Sell a Product!</h2>
+        <div class="form-container">
+          <div class="left-side-form">
+            <div class="form-field">
+              <label for="itemCat">Product Category:</label>
+              <select name="category" id="itemCat">
+                <option default selected disabled>Choose a category...</option>
+                <option value="laptops">Laptops</option>
+                <option value="phones">Phones</option>
+                <option value="accessories">Accessories</option>
+                <option value="tablets">Tablets</option>
+              </select>
             </div>
-            <div class="nav-right">
-                <a class="secondary-btn" href="../sell_item/">Sell item</a>
-                <a href="../cart/">
-                    <div class="basket">
-                        <img
-                            class="basket-nav"
-                            src="https://cdn3d.iconscout.com/3d/premium/thumb/cart-5590712-4652404.png"
-                            alt="Shopping cart"
-                        />
-                        <p class="notification">1</p>
-                    </div>
-                </a>
-                <a href="../account/">
-                    <img
-                        class="account-nav"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/1024px-Circle-icons-profile.svg.png"
-                        alt="Profile Picture"
-                    />
-                </a>
-            </div>
-        </nav>
-        <main>
-            <form class="formatted-form" action="#">
-                <h2>Sell a Product!</h2>
-                <div class="form-container">
-                    <div class="left-side-form">
-                        <div class="form-field">
-                            <label for="itemCat">Product Category:</label>
-                            <select name="category" id="itemCat">
-                                <option default selected disabled>
-                                    Choose a category...
-                                </option>
-                                <option value="laptops">Laptops</option>
-                                <option value="phones">Phones</option>
-                                <option value="accessories">Accessories</option>
-                                <option value="tablets">Tablets</option>
-                            </select>
-                        </div>
 
             <div class="form-field">
               <label for="item-name-field">Product name:</label>
@@ -74,25 +72,33 @@
             </div>
             <div class="form-field">
               <label for="item-price-field">Price per unit:</label>
-              <input id="item-price-field" name="name" type="number" min="0"></input>
+              <input id="item-price-field" name="name" type="number" min="0" />
             </div>
-        </div>
+          </div>
 
-        <div class="right-side-form">
-          <div class="form-field">
-            <label for="item-images-field">Product Images:</label>
-            <input id="item-images-field" name="name" type="file" accept="image/*" multiple></input>
-            <div class="img-container">
-              <img class="item-img">
-              <p>No Images Added Yet</p>
+          <div class="right-side-form">
+            <div class="form-field">
+              <label for="item-images-field">Product Images:</label>
+              <input
+                id="item-images-field"
+                name="name"
+                type="file"
+                accept="image/*"
+                multiple
+              />
+              <div class="img-container">
+                <img class="item-img" />
+                <p>No Images Added Yet</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="centered-content padding-top-submit">
-        <button type="submit" class="accent-btn">Submit Product for Sell</button>
-      </div>
+        <div class="centered-content padding-top-submit">
+          <button type="submit" class="accent-btn">
+            Submit Product for Sell
+          </button>
+        </div>
       </form>
     </main>
     <script src="../scripts/forms.js"></script>
