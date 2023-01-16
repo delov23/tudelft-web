@@ -1,21 +1,33 @@
 (function () {
-    const filterBtn = document.querySelector('.filters-header > button');
-    filterBtn.addEventListener('click', () => {
-        document.querySelectorAll('.filter').forEach((f) => {
-            const toAdd = f.classList.contains('open') ? 'closed' : 'open';
-            const toRemove = toAdd === 'open' ? 'closed' : 'open';
-            f.classList.add(toAdd);
-            f.classList.remove(toRemove);
-            
-            // f.style.display =
-            //     f.style.display === 'none' || f.style.display === ''
-            //         ? 'flex'
-            //         : 'none';
-            // const toAdd = f.classList.contains('op-1') ? 'op-0' : 'op-1';
-            // const toRemove = toAdd === 'op-0' ? 'op-1' : 'op-0';
-            // f.classList.add(toAdd);
-            // f.classList.remove(toRemove);
-        });
-        filterBtn.classList.toggle('upside-down');
+  const filterBtn = document.querySelector(".filters-header > button");
+  filterBtn.addEventListener("click", () => {
+    document.querySelectorAll(".filter").forEach((f) => {
+      const toAdd = f.classList.contains("open") ? "closed" : "open";
+      const toRemove = toAdd === "open" ? "closed" : "open";
+      f.classList.add(toAdd);
+      f.classList.remove(toRemove);
+
+      // f.style.display =
+      //     f.style.display === 'none' || f.style.display === ''
+      //         ? 'flex'
+      //         : 'none';
+      // const toAdd = f.classList.contains('op-1') ? 'op-0' : 'op-1';
+      // const toRemove = toAdd === 'op-0' ? 'op-1' : 'op-0';
+      // f.classList.add(toAdd);
+      // f.classList.remove(toRemove);
     });
+    filterBtn.classList.toggle("upside-down");
+  });
+
+  const fromEl = document.getElementById("min-price");
+  const toEl = document.getElementById("max-price");
+
+  toEl.addEventListener("change", () => {
+    fromEl.max = toEl.value;
+  });
+
+  fromEl.addEventListener("change", () => {
+    toEl.min = fromEl.value;
+  });
+  
 })();
