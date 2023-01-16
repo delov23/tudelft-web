@@ -214,6 +214,20 @@
     margin-bottom: 1rem;
 }
 
+.form-field-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.form-field-2 .form-field {
+    width: 48%;
+}
+
+.form-field-2 .form-field input {
+    width: 100%;
+}
+
 .formatted-form {
     width: 80vw;
     min-height: 80vh;
