@@ -24,8 +24,14 @@
                 <div class="form-content">
                     <h2>Sign up for D&amp;Y's!</h2>
                     <div class="account-choice">
-                        <button class="account-customer selected-account">Customer</button>
+                        <button class="account-customer selected-account">
+                            Customer
+                        </button>
                         <button class="account-seller">Seller</button>
+                    </div>
+                    <div class="form-field">
+                        <label for="user-id">User ID</label>
+                        <input type="text" id="user-id" name="userId" />
                     </div>
                     <div class="form-field">
                         <label for="email">Email</label>
@@ -38,11 +44,47 @@
                     </div>
                     <div class="form-field">
                         <label for="name">Name</label>
-                        <input
-                            type="text"
-                            id="name"
-                            placeholder="Your Name"
-                        />
+                        <input type="text" id="name" placeholder="Your Name" />
+                    </div>
+                    <div class="form-field">
+                        <label for="gender">Gender</label>
+                        <select id="gender">
+                            <option default selected disabled>Select your gender...</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="n/a">Prefer not to say</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="language">Language</label>
+                        <input type="text" name="language" id="language" placeholder="Language" />
+                    </div>
+                    <div class="form-field">
+                        <label for="about">About you...</label>
+                        <textarea type="text" name="about" id="about" placeholder="Bio"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address" placeholder="Address Line" />
+                    </div>
+                    <div class="form-field-2">
+                        <div class="form-field">
+                            <label for="country">Country</label>
+                            <input
+                                type="text"
+                                id="country"
+                                placeholder="Country"
+                            />
+                        </div>
+                        <div class="form-field">
+                            <label for="zip-code">ZIP Code</label>
+                            <input
+                                type="text"
+                                maxlength="6"
+                                id="zip-code"
+                                placeholder="ZIP Code"
+                            />
+                        </div>
                     </div>
                     <div class="form-field">
                         <label for="password">Password</label>

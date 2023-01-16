@@ -5,10 +5,17 @@
 
 .account h1 {
     text-align: left;
+    margin-bottom: 0;
 }
 
 .account-container {
     display: flex;
+    /* align-items: center; */
+}
+
+.helper-text-user {
+    text-transform: uppercase;
+    /* font-size: 1.1rem !important; */
 }
 
 .account-container > *:nth-child(2) {
@@ -16,6 +23,7 @@
 }
 
 .account-container > div:first-child {
+    padding-top: 2rem;
     padding-right: 2rem;
 }
 
@@ -32,6 +40,37 @@
 
 .logout-form {
     text-align: right;
+}
+
+.account h1 {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.logout-form {
+    margin-top: 2rem;
+}
+
+.user-details h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.user-details p {
+    margin: .5rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.user-data {
+    display: flex;
+    align-items: center;
+}
+
+.user-data img {
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 @media screen and (max-width: 1200px) {
